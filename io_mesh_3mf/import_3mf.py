@@ -454,7 +454,7 @@ class Import3MF(bpy.types.Operator, bpy_extras.io_utils.ImportHelper):
                     log.warning(f"Duplicate material ID: {material_id}")
                     continue
 
-                # Use a dictionary mapping indices to resources, because some indices may be skipped due to being invalid.
+                # Use a dictionary mapping indices to resources, some indices may be skipped due to being invalid.
                 self.resource_materials[material_id] = {}
                 index = 0
 
